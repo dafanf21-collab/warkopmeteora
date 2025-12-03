@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Warkop Meteora — Tempat Nongkrong Paling Nyaman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Warkop Meteora — ngopi, nongkrong, nugas, dan live acoustic. Suasana cozy, harga ramah mahasiswa."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">
+            <img src="logo.jpeg" alt="Logo Warkop Meteora" />
+          </div>
+          <div>
+            <div class="site-title">Warkop Meteora</div>
+            <div class="tagline">Cozy • Nongkrong • Live Acoustic</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="ghost" onclick="scrollToSection('menu')">Menu</button>
+          <button class="ghost" onclick="scrollToSection('gallery')">
+            Galeri
+          </button>
+          <a
+            class="ghost"
+            href="https://instagram.com/warkopmeteorabejidepok"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            class="ghost"
+            href="https://www.tiktok.com/@warkopmeteorabejidepok"
+            target="_blank"
+            >TikTok</a
+          >
+          <button class="btn" onclick="openReservation()">Reservasi</button>
+        </nav>
+      </header>
+
+      <section class="hero card">
+        <div class="hero-left">
+          <div class="tag">Tempat Nongkrong</div>
+          <h2>Warkop Meteora – Tempat Nongkrong Paling Nyaman di Depok</h2>
+          <p>
+            Ngopi, ngobrol, dan nikmati malam dengan cita rasa terbaik. Cocok
+            buat nugas, kumpul bareng, atau sekadar santai sambil dengerin live
+            acoustic.
+          </p>
+          <div class="actions">
+            <button class="btn" onclick="scrollToSection('menu')">
+              Lihat Menu
+            </button>
+            <button class="ghost" onclick="openReservation()">Reservasi</button>
+          </div>
+          <div class="meta">Buka: 24 jam • Harga ramah mahasiswa</div>
+        </div>
+        <div class="mockup" aria-hidden="true"></div>
+      </section>
+
+      <section id="about" class="card">
+        <h3>Tentang Kami</h3>
+        <p>
+          Kedai Meteora adalah warkop yang udah berdiri sejak 2013 di daerah
+          Kukusan, Beji, Depok. Tempat ini jual berbagai makanan dan minuman
+          dengan harga ramah di kantong, cocok buat nongkrong bareng temen atau
+          sekadar ngopi santai. Suasananya nyaman dan simple khas warkop, nggak
+          ribet tapi bikin betah. Tempat duduknya cukup luas, jadi enak buat
+          ngobrol lama atau ngerjain tugas. Pelayanannya juga ramah, jadi
+          pengunjung merasa santai kayak di rumah sendiri..
+        </p>
+      </section>
+
+      <!-- MENU -->
+      <section id="menu">
+        <h3>Menu Warkop Meteora</h3>
+
+        <div class="menu-list">
+          <div class="menu-item">
+            <img src="AnekaBubur.jpeg" alt="Aneka Bubur" />
+            <div>
+              <h4>Aneka Bubur</h4>
+              <div class="muted">
+                Bubur ayam, bubur kacang hijau, bubur candil
+              </div>
+              <div class="price">Start from Rp15.000</div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="AnekaPancong.jpeg" alt="Aneka Pancong" />
+            <div>
+              <h4>Aneka Pancong</h4>
+              <div class="muted">Coklat, keju, pandan, oreo</div>
+              <div class="price">Start from Rp8.000</div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="Anekamie.jpeg" alt="Aneka Mie" />
+            <div>
+              <h4>Aneka Mie</h4>
+              <div class="muted">Indomie goreng, kuah, topping spesial</div>
+              <div class="price">Start from Rp9.000</div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="AnekaMinuman.jpeg" alt="Aneka Minuman" />
+            <div>
+              <h4>Aneka Minuman</h4>
+              <div class="muted">Teh, jeruk, es teh susu, minuman segar</div>
+              <div class="price">Start from Rp5.000</div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="Anekakopi.jpeg" alt="Aneka Kopi" />
+            <div>
+              <h4>Aneka Kopi</h4>
+              <div class="muted">
+                Kopi hitam, kopi susu, espresso, kopi aren
+              </div>
+              <div class="price">Start from Rp5.000</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="card">
+        <h3>Galeri</h3>
+        <div class="gallery">
+          <img src="Tampak depan.jpeg" alt="foto1" />
+          <img src="Tampak dalem atas.jpeg" alt="foto2" />
+          <img src="TampakLuar2.jpeg" alt="foto3" />
+          <img src="TampakKasir.jpeg" alt="foto4" />
+          <img src="TampakDalem2.jpeg" alt="foto5" />
+          <img src="TampakDapur.jpeg" alt="foto6" />
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Fasilitas</h3>
+        <div class="facilities">
+          <div class="facility">WiFi cepat</div>
+          <div class="facility">Colokan banyak</div>
+          <div class="facility">Live acoustic</div>
+          <div class="facility">Area indoor</div>
+          <div class="facility">Tempat nugas nyaman</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Testimoni Pelanggan</h3>
+        <div class="testi-list">
+          <div class="testi">
+            <img src="images/avatar1.jpg" alt="" />
+            <div>
+              <strong>Rizal</strong>
+              <div class="muted">Mahasiswa</div>
+              <p class="muted">
+                "Kopi enak, WiFi kencang, cocok buat nugas sampai malam."
+              </p>
+            </div>
+          </div>
+          <div class="testi">
+            <img src="images/avatar2.jpg" alt="" />
+            <div>
+              <strong>Sinta</strong>
+              <div class="muted">Content Creator</div>
+              <p class="muted">
+                "Tempatnya aesthetic, cocok buat foto konten!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h3>Kontak & Lokasi</h3>
+        <div class="contact-grid">
+          <div>
+            <p>
+              <strong>Alamat:</strong><br /><a
+                href="https://maps.app.goo.gl/BfNgksJMvqS5uLNj7?g_st=ipc"
+                target="_blank"
+                >Klik untuk buka Google Maps</a
+              >
+            </p>
+            <p>
+              <strong>WhatsApp Order:</strong><br /><a
+                href="https://wa.me/6281912356888"
+                target="_blank"
+                >+62 819-1235-6888</a
+              >
+            </p>
+            <p>
+              <strong>Instagram:</strong><br /><a
+                href="https://instagram.com/warkopmeteorabejidepok"
+                target="_blank"
+                >@warkopmeteorabejidepok</a
+              >
+            </p>
+            <p>
+              <strong>TikTok:</strong><br /><a
+                href="https://www.tiktok.com/@warkopmeteorabejidepok"
+                target="_blank"
+                >@warkopmeteorabejidepok</a
+              >
+            </p>
+            <div class="action-buttons">
+              <button class="btn" onclick="openMaps()">
+                Lihat di Google Maps
+              </button>
+              <button class="ghost" onclick="openWhatsApp()">
+                Order via WhatsApp
+              </button>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://maps.google.com/maps?q=Warkop%20Meteora&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Warkop Meteora — Semua hak dilindungi
+      </footer>
+    </div>
+
+    <!-- Reservation Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-card">
+        <h3>Reservasi Meja</h3>
+        <form id="resForm">
+          <label>Nama</label>
+          <input name="name" required />
+          <label>Tanggal</label>
+          <input type="date" name="date" required />
+          <label>Jam</label>
+          <input type="time" name="time" required />
+          <label>Catatan</label>
+          <textarea name="note" rows="3"></textarea>
+          <div class="modal-actions">
+            <button type="button" class="ghost" onclick="closeReservation()">
+              Batal
+            </button>
+            <button type="submit" class="btn">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
